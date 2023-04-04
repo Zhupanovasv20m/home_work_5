@@ -5,3 +5,13 @@
 # *Пример:*
 # 2 2
 #     4 
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+result = 0
+def sum_of_num (a, b):
+   if a == 0:
+      return b
+   else:
+    return sum_of_num(a-1, b+1)
+ 
+print (sum_of_num(a, b))
